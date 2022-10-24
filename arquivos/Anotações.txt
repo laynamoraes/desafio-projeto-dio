@@ -1,0 +1,63 @@
+Como o Git funciona por debaixo do panos
+
+	• SHA1
+
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA). A encriptação gera um conjunto de caracteres identificador de 40 dígitos.
+
+	• Objetos internos do Git
+
+São 3 tipos básicos de objetos do Git  responsáveis pelo versionamento do nosso código.
+
+		○ Blobs: contém metadados do Git, ou seja, o SHA1 do arquivo, o tipo do objeto, o tamanho do arquivo, etc.
+	
+		○ Trees: armazenam blobs; monta toda a estrutura de onde os arquivos estão.
+	
+		○ Commits: apontam para as árvores; trata-se das "versões" de um arquivo.
+
+
+
+Comandos básicos no terminal
+
+	• dir: listagem dos componentes da pasta
+
+	• cd: permite a navegação entre as pastas
+
+	• cd .. : retornar para uma pasta
+
+	• cls: limpar o terminal
+
+	• mkdir: criação de pasta
+
+	• echo: printa na tela uma mensagem inserida 
+
+	• echo hello > hello.txt: o sinal de maior que redireciona o fluxo e cria o arquivo hello.txt
+
+	• del: deleta apenas arquivos 
+
+	• rmdir workspace /S /Q: remove o diretório
+
+	• Ctrl + l : limpar tudo
+
+
+
+Comandos do Git
+
+	• git init: cria um repositório.
+	
+	• git add: adiciona uma alteração no diretório de trabalho à área de teste. Ele informa ao Git que você deseja incluir atualizações para um arquivo específico no próximo commit.
+	
+	• git commit -m "mensagem do commit": cria um novo commit que pode ser enviado posteriormente para repositórios remotos.
+
+	• git status: verifica o status do arquivo.
+
+	• git clone + link do repositório: utilizado para clonar um repositório remoto, do Github por exemplo.
+
+	• git push origin main: comando utilizado para enviar o commit para o repositório remoto.
+
+	• mv: mover para outra pasta.
+
+	• ls -a: mostra as pastas ocultas.
+
+
+Flags: funcionam como uma espécie de atributos complementares aos comandos principais.
+
